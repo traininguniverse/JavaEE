@@ -1,0 +1,1 @@
+Prosty projekt Java wyświetlający tekst.
