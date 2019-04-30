@@ -6,6 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Java EE 6 - Servlet and JSP demo</name>
 	<url>http://maven.apache.org</url>
+	
 	<repositories>
 		<!-- Several key Java EE APIs and RIs are missing from the Maven Central 
 			Repository -->
@@ -50,6 +51,11 @@
 	<build>
 		<finalName>servletjspdemo</finalName>
 		<plugins>
+		<plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>2.0.8</version>
+      </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
